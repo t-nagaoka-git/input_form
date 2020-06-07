@@ -1,0 +1,18 @@
+.message {
+  width: 500px;
+  margin: 0 auto;
+  border: 1px solid;
+}
+.message-body {
+  background-color: #fff;
+  text-align: left;
+}
+.message-body p {
+  padding: 10px 0 10px 0;
+}
+label {
+  margin-right: 5px;
+}
+.button {
+  margin: 10px;
+}
