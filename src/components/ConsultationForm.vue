@@ -37,7 +37,7 @@ export default {
   computed: {
     consultation1: {
       get() {
-        return this.$store.state.consultation1;
+        return this.$store.getters.consultation1;
       },
       set(value) {
         this.$store.commit('setConsultation1', value);
@@ -45,7 +45,7 @@ export default {
     },
     consultation2: {
       get() {
-        return this.$store.state.consultation2;
+        return this.$store.getters.consultation2;
       },
       set(value) {
         this.$store.commit('setConsultation2', value);
@@ -53,7 +53,7 @@ export default {
     },
     consultation3: {
       get() {
-        return this.$store.state.consultation3;
+        return this.$store.getters.consultation3;
       },
       set(value) {
         this.$store.commit('setConsultation3', value);

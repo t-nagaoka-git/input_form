@@ -22,7 +22,7 @@ export default {
   computed: {
     questionnaire1: {
       get() {
-        return this.$store.state.questionnaire1;
+        return this.$store.getters.questionnaire1;
       },
       set(value) {
         this.$store.commit('setQuestionnaire1', value);
