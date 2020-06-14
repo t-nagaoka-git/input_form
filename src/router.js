@@ -3,6 +3,7 @@ import Router from 'vue-router';
 import BasicInformationForm from './components/BasicInformationForm.vue';
 import ConsultationForm from './components/ConsultationForm.vue';
 import QuestionnaireForm from './components/QuestionnaireForm.vue';
+import ConfirmForm from './components/ConfirmForm.vue';
 
 Vue.use(Router);
 
@@ -20,6 +21,10 @@ export default new Router({
     {
       path: '/questionnaire',
       component: QuestionnaireForm,
+    },
+    {
+      path: '/confirm',
+      component: ConfirmForm,
     },
   ],
 });
