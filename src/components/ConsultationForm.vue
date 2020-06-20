@@ -26,7 +26,7 @@
         </div>
       </div>
     </div>
-    <router-link to="/" class="button is-primary">前へ進む</router-link>
+    <router-link to="/" class="button is-primary">前へ戻る</router-link>
     <router-link to="/questionnaire" class="button is-primary">次へ進む</router-link>
   </div>
 </template>
