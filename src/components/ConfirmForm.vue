@@ -18,11 +18,19 @@
           <p>{{ consultation1 }}</p>
         </div>
         <div class="consultation">
-          <p>- 現在入院中ですか。または、最近3ヶ月以内に医師の診療・検査の結果、入院・手術をすすめられたことはありますか？ -</p>
+          <p>
+            -
+            現在入院中ですか。または、最近3ヶ月以内に医師の診療・検査の結果、入院・手術をすすめられたことはありますか？
+            -
+          </p>
           <p>{{ consultation2 }}</p>
         </div>
         <div class="consultation">
-          <p>- 過去5年以内に、病気やけがで、手術をうけたことまたは継続して7日以上の入院をしたことがありますか？ -</p>
+          <p>
+            -
+            過去5年以内に、病気やけがで、手術をうけたことまたは継続して7日以上の入院をしたことがありますか？
+            -
+          </p>
           <p>{{ consultation3 }}</p>
         </div>
         <div class="lifeInsurance">
@@ -40,45 +48,29 @@
 export default {
   name: 'ConfirmForm',
   computed: {
-    sex: {
-      get() {
-        return this.$store.getters.sex;
-      },
+    sex () {
+      return this.$store.getters.sex;
     },
-    year: {
-      get() {
-        return this.$store.getters.year;
-      },
+    year () {
+      return this.$store.getters.year;
     },
-    month: {
-      get() {
-        return this.$store.getters.month;
-      },
+    month () {
+      return this.$store.getters.month;
     },
-    day: {
-      get() {
-        return this.$store.getters.day;
-      },
+    day () {
+      return this.$store.getters.day;
     },
-    consultation1: {
-      get() {
-        return this.$store.getters.consultation1;
-      },
+    consultation1 () {
+      return this.$store.getters.consultation1;
     },
-    consultation2: {
-      get() {
-        return this.$store.getters.consultation2;
-      },
+    consultation2 () {
+      return this.$store.getters.consultation2;
     },
-    consultation3: {
-      get() {
-        return this.$store.getters.consultation3;
-      },
+    consultation3 () {
+      return this.$store.getters.consultation3;
     },
-    questionnaire1: {
-      get() {
-        return this.$store.getters.questionnaire1;
-      },
+    questionnaire1 () {
+      return this.$store.getters.questionnaire1;
     },
   },
 };

@@ -14,19 +14,19 @@
           <p>- 生年月日 -</p>
           <div class="select">
             <select v-model="year">
-              <option v-for="n in 100" v-bind:value="1970 + n">{{ 1970 + n }}</option>
+              <option v-for="n in 100" v-bind:value="1970 + n" :key="n">{{ 1970 + n }}</option>
             </select>
           </div>
           年
           <div class="select">
             <select v-model="month">
-              <option v-for="n in 12" v-bind:value="n">{{ n }}</option>
+              <option v-for="n in 12" v-bind:value="n" :key="n">{{ n }}</option>
             </select>
           </div>
           月
           <div class="select">
             <select v-model="day">
-              <option v-for="n in days" v-bind:value="n">{{ n }}</option>
+              <option v-for="n in days" v-bind:value="n" :key="n">{{ n }}</option>
             </select>
           </div>
           日
